@@ -15,7 +15,7 @@
 
 .navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr; 
     grid-auto-rows: auto;
     grid-auto-flow: row;
     text-align: center;
@@ -23,11 +23,16 @@
     background-color: rgb(216, 216, 216);
 }
 
-.navlink {
+.navbar a {
     font-size: 20px;
     margin: auto !important;
     text-decoration: none !important;
-    color: black !important;
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar a:hover {
+    color:#074F57;
 }
 
 
@@ -44,7 +49,7 @@
 }
 
 .bcontainer p {
-    padding: 60px; 
+    padding: 60px 35px;
     position: absolute; 
     z-index: 1000; 
     color: white; 
@@ -162,6 +167,23 @@
     left: 50%;
     transform: translate(-50%, -50%);
     animation: circle1 12s 9s infinite ease-in;
+}
+
+
+
+.contacts {
+    background-color:black;
+}
+.contacts div {
+    text-align: center;
+}
+.contacts div p{
+    color: white !important;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
